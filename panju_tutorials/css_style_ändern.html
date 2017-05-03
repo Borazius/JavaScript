@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>CSS Style ändern</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style type="text/css">
+        #balken{
+            width: 100px;
+            height: 10px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hallo Welt</h1>
+    <div id="balken">
+        
+    </div>
+    </br>
+    <button id="btn">Klick auf mich um CSS zu ändern</button>
+    
+    <script type="text/javascript">
+        document.getElementById("btn").onclick = function() {
+            
+            // Wir ändern die Breite
+            document.getElementById("balken").style.width = "250px";
+            // wir verändern die Farbe
+            document.getElementById("balken").style.background = "red";
+
+        }
+    </script>
+</body>
+
+</html>

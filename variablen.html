@@ -1,0 +1,31 @@
+<html lang="de">
+
+    <head>
+        <title>Übung: Auf Elemente zugreifen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="headline">Hallo Welt</h1>
+        <p style= "color:red">Lorem ipsum</p>
+        <div id="wort"></div>
+
+        <script type="text/javascript">
+            // am Besten immer von rechts nach links coden
+            // alles was gespeichert werden muss wird in einer Variable gespeichert. 
+            // Zeile 9, rechts: wir wollen Eingabefeld Geburtsjahr und dieser wird links in die Variable geburtsjahr gespeichert. 
+            // Zeile 10, rechts Berechnung und das Ergebnis wird links
+            // in die Variable alter gesichert
+            var geburtsjahr = prompt("Ihr Geburtsjahr:");
+            var alter = 2017 - geburtsjahr;
+            // Alert-Methode
+            // alert ("Ihr Alter beträgt: " + alter);
+            document.getElementById("wort").innerHTML = "Sie sind "+ alter + " Jahre alt";
+            
+            
+        </script>
+        
+    </body>
+</html>
+
+

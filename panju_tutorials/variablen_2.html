@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Variablen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div>
+        <h1>Example Domain</h1>
+        <p id="text_ändern">This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p>
+        <p><a href="http://www.iana.org/domains/example">More information...</a></p>
+        <button id="btn">Klick hier damit sich der Text ändert</button>
+    </div>
+    <script type="text/javascript">
+        // Variable sonneScheint speichert den Wert "wahr"
+        var sonneScheint = true;
+        // variable sonneScheint speichert keinen Wert (leer)
+        var sonneScheint = null
+        // Variable Name speichert den Wert "Borazius"
+        var name = "Borazius";
+
+
+        document.getElementById("btn").onclick = function() {
+            document.getElementById("text_ändern").innerHTML = "HALLO WELT! " + zahl + " (Die Zahl entspricht unsere definierte Variable!)";
+        }
+    </script>
+</body>
+
+</html>

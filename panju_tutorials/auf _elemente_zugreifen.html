@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Übung: Auf Elemente zugreifen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Ergebnis: Obwohl wir als H1 "Hallo Welt" definiert haben wird hier Dank JS "Hallo Bora" ausgegeben.-->
+    <h1 id="überschrift">Hallo Welt</h1>
+    <p id="text">Lorem ipsum tralalalala</p>
+
+    <script type="text/javascript">
+        // mit der Funktion document.getElementById greifen wir auf ein Element
+        document.getElementById("überschrift").innerHTML = "Hallo Bora";
+        document.getElementById("text"). innerHTML = "Herzlich Willkommen!"
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Variablen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body {
+            background-color: rgb(141, 234, 61);
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        
+        div {
+            width: 630px;
+            margin: 5em auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 1em;
+        }
+        
+        a:link,
+        a:visited {
+            color: #38488f;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 700px) {
+            body {
+                background-color: #fff;
+            }
+            div {
+                width: auto;
+                margin: 0 auto;
+                border-radius: 0;
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Example Domain</h1>
+        <p id="text_ändern">This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission.</p>
+        <p><a href="http://www.iana.org/domains/example">More information...</a></p>
+        <button id="btn">Klick hier damit sich der Text ändert</button>
+    </div>
+    <script type="text/javascript">
+        // anders formuliert:
+        // var zahl; 
+        // zahl = 15;
+        var zahl = 15;
+        
+        
+        document.getElementById("btn").onclick = function(){
+            document.getElementById("text_ändern").innerHTML = "HALLO WELT! " + zahl + " (Die Zahl entspricht unsere definierte Variable!)";
+        }
+        
+    </script>
+</body>
+
+</html>
