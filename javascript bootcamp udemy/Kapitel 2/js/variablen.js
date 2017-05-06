@@ -1,3 +1,5 @@
+"use strict"; 
+
 let a = "Hallo Welt";
 let b = "Hallo Mars";
 alert (a);

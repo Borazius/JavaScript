@@ -1,3 +1,5 @@
+"use strict"; 
+
 let m = 79;
 let l = 1.75;
 
