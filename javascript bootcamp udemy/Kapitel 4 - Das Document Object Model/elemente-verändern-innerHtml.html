@@ -1,0 +1,52 @@
+<!--Wir wollen in diesem Beispiel zeigen wie man Daten in die DOM schreibt.
+Problem: Wir wollen ein existierendes Element in der DOM verändern, z.B. "Überschrift-Titel soll sich verändern". Wie schreiben wir also Daten in das DOM?
+Mit:
+element.innerHTML: Damit können wir auf den HTML-Code zugreifen!
+element.innerText: Damit können wir auf den Text-Inhalt zugreifen!
+element.className / element.classList: Zugriff auf die CSS-Klassen 
+element.style: Zugriff auf die CSS-Attribute -->
+
+<!-- Auchtung: element entspricht entweder id-name oder ein html element wie z.B. h1 -->
+
+<html>
+    <head>
+        <title>Elemente verändern - innerHtml, innerText</title>
+        <meta charset="UTF-8" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.css" />
+
+        <script type="text/javascript" src="js/elemente-ver%C3%A4ndern-innerHtml.js"></script>
+    </head>
+    <body>
+        <br />
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" id="headline">Erste Überschrift</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-success">
+                                Hallo Bora!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" id="headline2">Überschrift zweite BOX</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="alert alert-success">
+                                Hallo Welt!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
