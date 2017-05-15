@@ -1,0 +1,18 @@
+#container {
+    background-color: #ffff9c;
+}
+
+.headline {
+    color: yellow;
+    background-color: #d6ad00;
+    padding: 7px;
+}
+
+#inhalt {
+    color: red;
+    padding: 7px
+}
+
+.hide{
+    display:none;
+}
