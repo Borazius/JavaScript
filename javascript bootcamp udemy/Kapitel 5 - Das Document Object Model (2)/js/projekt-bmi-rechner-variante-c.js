@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
         let weightObj = document.getElementById("weight");
 
         // Hier sichern wir ab das ungewünschte Eingaben erfolgen wie z.B Punkt statt Komma oder Eingabe von Zeichenketten in Eingabefeldern in der Zahlen erwartet werden
-        // mit value holt man die Eingaben in Eingabefeldern!
+        // Die Eigenschaft value speichert den Wert, der in einem Formularelement eingegeben wurde bzw. diesem zugewiesen ist.
         // Wir erzwingen mit replace die gewünschte Eingabe (hier Punkt statt Komma
         // mit parseFloat-Methode werden Zeichenangaben in einer nummerischen Eingabefeld ignoriert und es wird eine Zahl ausgegeben und die dahinter folgenden Strings fallen weg!
         let height = parseFloat(heightObj.value.replace(",", "."));
