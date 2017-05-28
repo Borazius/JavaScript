@@ -1,0 +1,66 @@
+<!-- aufrundenÜbung -->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Übung Aufrunden</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/style2.css">
+
+
+</head>
+
+    <body>
+        <nav class="navbar navbar-inverse-n navbar-fixed-top">
+            <div class="container">
+
+
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <h1>BMI - Rechner </h1>
+            <p class="lead">Diese Variante zeigt den Test via Konsole</p>
+            <div id="flexx">
+                <p>Bitte geben Sie Ihre Daten ein </p>
+
+                <br />
+                <br />
+
+                <!--Eingabefeld Körpergewicht-->
+                <!-- Info: the name attribute is used for posting to e.g. a database webserver. The id is primarily used for css (and javascript) -->
+                <br />
+                <label for="height" class="label-own">Körpergröße in m:</label>
+                <input type="text" id="height" name="height">
+
+                <!--Eingabefeld Körpergröße-->
+                <br />
+                <label for="weight" class="label-own">Gewicht in kg:</label>
+                <input type="text" id="weight" name="weight">
+
+                <!--Button -->
+                <br />
+                <button id="calculate">BMI berechnen</button>
+                <br />
+
+            </div>
+        </div>
+
+        <!-- /.container -->
+
+
+        <!-- JS -->
+        <script src="js/projekt-aufrunder.js"></script>
+</body>
+
+</html>

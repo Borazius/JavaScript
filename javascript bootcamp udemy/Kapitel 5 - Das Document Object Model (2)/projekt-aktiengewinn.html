@@ -1,0 +1,67 @@
+<!-- Mein Projekt: Aktiengewinn - Berechner-->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aktiengewinn - Berechner</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/style2.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse-n navbar-fixed-top">
+
+    </nav>
+
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1>Aktien-Berechner</h1>
+        <p class="lead">Berechne Veränderung in % seit Aktienkauf</p>
+
+        <div class="row">
+            <div class="col-xs-8 col-sm-6 col-md-4 col-lg-4">
+                <p>Bitte geben sie Einstiegskurs und aktuellen Kurs ein </p>
+
+                <!--Eingabefeld Einstiegskurs-->
+                <!-- Info: the name attribute is used for posting to e.g. a database webserver. The id is primarily used for css (and javascript) -->
+                <br />
+                <label for="start" class="label-own">Einstiegskurs in €: </label>
+                <br />
+                <input type="text" id="start" name="start">
+
+                <!--Eingabefeld Körpergröße-->
+                <br />
+                <label for="now" class="label-own">Aktueller Kurs in €: </label>
+                <br />
+                <input type="text" id="now" name="now">
+
+                <!--Button -->
+                <br />
+                <br />
+                <button id="calculate">Veränderung in Prozent</button>
+
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <p class="headline">Ergebnis in % </p>
+                <p id="result"></p>
+            </div>
+
+        </div>
+
+        <!-- /.container -->
+
+        <!-- JS -->
+        <script src="js/projekt-aktiengewinn.js"></script>
+</body>
+
+</html>

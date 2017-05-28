@@ -1,0 +1,39 @@
+.headline {
+    font-size: 1.7rem;
+    font-weight: bold;
+    width: 100%;
+}
+#result {
+    margin-top: 40px;
+    background-color: #6dff6d;
+    height: auto;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+.navbar-inverse-n {
+    background-color: #0800cc;
+    border-color: #9d9999;
+}
+.label-own {
+    font-weight: 100;
+}
+.container {
+    display: block;
+}
+#flexx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#start,
+#now,
+#calculate {
+    width: 100%
+}
