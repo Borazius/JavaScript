@@ -21,6 +21,8 @@ let a = 5;
 
 if (a < 10) { // If- Abfrage
     console.log("a ist kleiner als die Zahl 5"); // Falls Bedingung erfüllt, führe das aus
+}else{
+    console.log("a ist größer als 5")
 }
 
 console.log("Fertig!")
