@@ -13,6 +13,16 @@
     padding-right: 10px;
     display: inline-block;
 }
+#negative-result {
+    margin-top: 40px;
+    background-color: # ff5e5e;
+    height: auto;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
 .navbar-inverse-n {
     background-color: #0800cc;
     border-color: #9d9999;

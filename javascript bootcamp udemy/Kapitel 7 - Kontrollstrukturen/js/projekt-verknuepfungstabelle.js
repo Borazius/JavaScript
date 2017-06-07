@@ -4,6 +4,7 @@
 "use strict";
 
 let tbodyAnd = document.getElementById("und").children[1]; // Wir greifen auf das erste Element vom table "und" daher children [1]. Erklärung siehe unten.
+let tbodyOr = document.getElementById("oder").children[1]; // Wir greifen auf das erste Element vom table "und" daher children [1]. Erklärung siehe unten.
 
 
 /* In der Konsole nach der Ausgabe folgendes eingeben:
@@ -55,5 +56,26 @@ for(let a of aValues) {
         tr.appendChild(td2);
 
         tbodyAnd.appendChild(tr);
+    }
+}
+
+for(let a of aValues) {
+    for(let b of bValues) {
+        let tr = document.createElement("tr");
+
+        let td0 = document.createElement("td");
+        td0.innerHTML = a;
+
+        let td1 = document.createElement("td");
+        td1.innerHTML = b;
+
+        let td2 = document.createElement("td");
+        td2.innerHTML = (a || b);
+
+        tr.appendChild(td0);
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        tbodyOr.appendChild(tr);
     }
 }

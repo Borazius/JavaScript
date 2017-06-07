@@ -1,10 +1,48 @@
 
 .label-own {
-    font-weight: 100;
+    font-weight: 100%;
 }
 
 .container {
     display: block;
+}
+
+.navbar-inverse-n {
+    background-color: #0ea2ff;
+    border-color: #9d9999;
+}
+.ergebnis {
+	font-size: 120%;
+    font-weight: 900;
+}
+
+#result{
+    font-size: 150%;
+    font-weight: 900;
+}
+
+#übergewicht, #normalgewicht, #untergewicht{
+    display: none;
+    font-size: 140%;
+    padding:5px;
+    font-weight: bold;
+}
+
+
+#übergewicht{
+    background-color: #ff0000;
+}
+
+#normalgewicht{
+    background-color: #00ff00;
+}
+
+#untergewicht{
+    background-color: #ef9292;
+}
+
+#link-wiki{
+    display: none;    
 }
 
 #flexx {

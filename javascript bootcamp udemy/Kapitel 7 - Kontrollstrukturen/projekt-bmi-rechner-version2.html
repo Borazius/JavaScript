@@ -1,0 +1,74 @@
+<!-- Projekt: BMI-Rechner -->
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BMI - Berechner - Version 2</title>
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse-n navbar-fixed-top">
+    </nav>
+
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1>BMI - Berechner - Version 2</h1>
+        <p class="lead">Berechne BMI</p>
+
+        <div class="row">
+            <div class="col-xs-8 col-sm-6 col-md-4 col-lg-4">
+                <p>Bitte geben Sie Ihre Daten ein </p>
+
+                <!--Eingabefeld Einstiegskurs-->
+                <!-- Info: the name attribute is used for posting to e.g. a database webserver. The id is primarily used for css (and javascript) -->
+                <br />
+                <label for="groesse" class="label-own">Körpergröße in m: </label>
+                <br />
+                <input type="text" id="groesse" name="groesse">
+                <br />
+                <!--Eingabefeld Körpergröße-->
+                <br />
+                <label for="gewicht" class="label-own">Gewicht in kg: </label>
+                <br />
+                <input type="text" id="gewicht" name="gewicht">
+
+                <!--Button -->
+                <br />
+                <br />
+                <button id="calculate" class="btn btn-primary">BMI berechnen</button>
+
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="jumbotron">
+                    <h3>Ihr BMI beträgt:</h3>
+                    <br />
+                    <strong>
+                        <p id="result"></p>
+                    </strong>
+                    <div id="übergewicht" class="ergebnis">Übergewicht!</div>
+                    <div id="normalgewicht" class="ergebnis">Normalgewicht</div>
+                    <div id="untergewicht" class="ergebnis">Unter Normalgewicht</div>
+                    <div id="link-wiki"><a href="https://de.wikipedia.org/wiki/Body-Mass-Index#Bei_Erwachsenen" target="_blank">weitere Infos</a></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- /.container -->
+
+        <!-- JS -->
+        <script src="js/projekt-bmi-rechner-version2.js"></script>
+</body>
+
+</html>
