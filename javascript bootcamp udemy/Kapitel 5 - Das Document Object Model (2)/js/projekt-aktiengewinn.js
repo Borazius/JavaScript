@@ -18,7 +18,8 @@ window.addEventListener("load", function () {
         // mit parseFloat-Methode werden Zeichenangaben in einer nummerischen Eingabefeld ignoriert und es wird eine Zahl ausgegeben und die dahinter folgenden Strings fallen weg!
         let start = parseFloat(startObj.value.replace(",", "."));
         let now = parseFloat(nowObj.value);
-        let bmi = (weight / (height * height));
+        // Veränderung = (Aktienkurs Jetzt / Aktienkurs Start) * 100 - 100
+        let change = (now / start) * 100 - 100;
 
         // Math.round (change * 100) / 100
         // für zwei Stellen nach Komma
@@ -29,7 +30,10 @@ window.addEventListener("load", function () {
   
         if (change < 0){
             document.getElementById("result").style.backgroundColor = "#ff5e5e";
-        } 
+           
+        } else if (change == 0){
+            document.getElementById("result").style.backgroundColor = "orange";
+        }
 
         /* oder kurz:
         document.getElementById("result").innerHTML = change + " %";
